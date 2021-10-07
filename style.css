@@ -1,3 +1,16 @@
 body {
   box-sizing: content-box;
 }
+
+/* Add a gost element before the start of the body, to push everything down (so we can have the fixed navbar and the picture shows up entirely*/
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
